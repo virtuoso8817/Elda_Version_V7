@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "144631109070",
+    "project_id": "elda-version-v7",
+    "storage_bucket": "elda-version-v7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144631109070:android:672d6efe7cde5da369879f",
+        "android_client_info": {
+          "package_name": "com.example.elda_version_v7"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1DLSlGoUlpavJgFItq_wkH39-XBkww2k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
