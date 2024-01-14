@@ -20,7 +20,7 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
         firebaseAuth = FirebaseAuth.getInstance()
-        binding.loginButton.setOnClickListener {
+        binding.loginArrow.setOnClickListener {
             val email = binding.loginEmail.text.toString()
             val password = binding.loginPassword.text.toString()
             if (email.isNotEmpty() && password.isNotEmpty()){
@@ -75,3 +75,4 @@ class LoginActivity : AppCompatActivity() {
             }
     }
 }
+

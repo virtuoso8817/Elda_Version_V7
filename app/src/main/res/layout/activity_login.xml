@@ -12,7 +12,7 @@
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:id="@+id/textview"
+            android:id="@+id/textview1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -25,7 +25,7 @@
                 app:srcCompat="@drawable/top_background1" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/textView_head"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
@@ -36,7 +36,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/loginEmail"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="32dp"
@@ -47,12 +47,13 @@
                 android:drawablePadding="16dp"
                 android:ems="10"
                 android:hint="Email"
+                android:textColor="@color/grey"
                 android:inputType="textPersonName"
                 android:padding="8dp"
                 android:textColorHint="#756C6C" />
 
             <EditText
-                android:id="@+id/editTextTextPasswordName"
+                android:id="@+id/loginPassword"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="32dp"
@@ -62,13 +63,14 @@
                 android:drawableStart="@drawable/password"
                 android:drawablePadding="16dp"
                 android:ems="10"
+                android:textColor="@color/grey"
                 android:hint="Password"
                 android:inputType="textPersonName|textPassword"
                 android:padding="8dp"
                 android:textColorHint="#756C6C" />
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/loginArrow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
@@ -84,36 +86,6 @@
                 android:layout_marginStart="32dp"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/button2"
-                    android:layout_width="wrap_content"
-                    style="@android:style/Widget.Material.Light.Button.Inset"
-                    android:layout_height="55dp"
-                    android:layout_weight="1"
-                    android:drawableEnd="@drawable/google"
-                    android:drawablePadding="16dp"
-                    android:padding="8dp"
-                    android:layout_marginRight="10dp"
-                    android:background="@drawable/btn_background"
-                    android:text="Google"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="#3b688c" />
-
-                <Button
-                    android:id="@+id/button"
-                    style="@android:style/Widget.Material.Light.Button.Inset"
-                    android:layout_width="wrap_content"
-                    android:layout_height="55dp"
-                    android:drawableEnd="@drawable/facebook"
-                    android:drawablePadding="16dp"
-                    android:padding="8dp"
-                    android:background="@drawable/btn_background"
-                    android:layout_weight="1"
-                    android:text="Facebook"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="#3b688c" />
 
 
             </LinearLayout>
@@ -130,7 +102,7 @@
                 android:textSize="16sp"/>
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/signupRedirectText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
