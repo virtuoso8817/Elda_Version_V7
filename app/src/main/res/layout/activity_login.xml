@@ -76,7 +76,10 @@
                 android:layout_gravity="end"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="32dp"
-                app:srcCompat="@drawable/btn_arraw1" />
+                android:elevation="5dp"
+                android:translationZ="2dp"
+                android:background="@drawable/btn_arraw1" />
+
 
             <LinearLayout
                 android:layout_width="match_parent"

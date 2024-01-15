@@ -244,11 +244,12 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
+
                             android:layout_weight="1"
-                            android:background="@drawable/white_background">
+                            android:background="@drawable/lavender_border">
 
                             <ImageView
-                                android:id="@+id/imageView12"
+                                android:id="@+id/water"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="16dp"
@@ -284,7 +285,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:background="@drawable/white_background">
+                            android:background="@drawable/lavender_border">
 
                             <ImageView
                                 android:id="@+id/imageView14"
@@ -323,7 +324,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:background="@drawable/white_background">
+                            android:background="@drawable/lavender_border">
 
                             <ImageView
                                 android:id="@+id/imageView16"
@@ -362,7 +363,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:background="@drawable/white_background">
+                            android:background="@drawable/lavender_border">
 
                             <ImageView
                                 android:id="@+id/imageView18"
@@ -409,7 +410,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_weight="1"
-                            android:background="@drawable/white_background">
+                            android:background="@drawable/lavender_border">
 
                             <ImageView
                                 android:id="@+id/imageView20"
@@ -448,7 +449,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:background="@drawable/white_background">
+                            android:background="@drawable/lavender_border">
 
                             <ImageView
                                 android:id="@+id/imageView22"
@@ -487,7 +488,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:background="@drawable/white_background">
+                            android:background="@drawable/lavender_border">
 
                             <ImageView
                                 android:id="@+id/imageView24"
@@ -527,7 +528,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_weight="1"
-                            android:background="@drawable/white_background">
+                            android:background="@drawable/lavender_border">
 
                             <ImageView
                                 android:id="@+id/imageView7"

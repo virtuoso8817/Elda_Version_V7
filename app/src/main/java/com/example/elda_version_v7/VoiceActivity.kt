@@ -5,9 +5,10 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
-import android.widget.Button
-import android.widget.TextView
-import android.widget.Toast
+import android.view.View
+import android.view.animation.Animation
+import android.view.animation.Transformation
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -52,6 +53,21 @@ class VoiceActivity : AppCompatActivity() {
             }
     }
 
+    fun showSOSInfo(view: View) {
+        val knowMoreTextView = findViewById<TextView>(R.id.knowMoreTextView)
+        val sosInfoBox = findViewById<LinearLayout>(R.id.sosInfoBox)
+
+        // Remove the "Know more about SOS" text with animation
+        val collapseAnimation = CollapseAnimation(knowMoreTextView, 300)
+        knowMoreTextView.startAnimation(collapseAnimation)
+
+        // Show the SOS info box with animation
+        sosInfoBox.visibility = View.VISIBLE
+        knowMoreTextView.visibility = View.GONE
+        sosInfoBox.alpha = 0f
+        sosInfoBox.animate().alpha(1f).setDuration(500).start()
+    }
+
     private fun checkCallPermission(): Boolean {
         return if (ContextCompat.checkSelfPermission(
                 this,
@@ -80,5 +96,39 @@ class VoiceActivity : AppCompatActivity() {
             // Permission granted, call intent
         }
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+    }
+
+    private class CollapseAnimation(
+        private val view: View,
+        private var duration: Long
+    ) : Animation() {
+        private val initialHeight: Int = view.height
+
+        override fun applyTransformation(
+            interpolatedTime: Float,
+            t: Transformation?
+        ) {
+            view.layoutParams.height =
+                if (interpolatedTime == 1f) {
+                    0
+                } else {
+                    (initialHeight * (1 - interpolatedTime)).toInt()
+                }
+            view.requestLayout()
+        }
+
+        override fun initialize(
+            width: Int,
+            height: Int,
+            parentWidth: Int,
+            parentHeight: Int
+        ) {
+            super.initialize(width, height, parentWidth, parentHeight)
+            duration = this.duration
+        }
+
+        override fun willChangeBounds(): Boolean {
+            return true
+        }
     }
 }

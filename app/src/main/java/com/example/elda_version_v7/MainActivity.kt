@@ -1,5 +1,6 @@
 package com.example.elda_version_v7
 
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -36,6 +37,11 @@ class MainActivity : AppCompatActivity() {
         binding.voice.setOnClickListener {
             val voiceIntent = Intent(this, VoiceActivity::class.java)
             startActivity(voiceIntent)
+        }
+
+        binding.water.setOnClickListener {
+            val timerIntent = Intent(this, WaterReminder::class.java)
+            startActivity(timerIntent)
         }
     }
 }
